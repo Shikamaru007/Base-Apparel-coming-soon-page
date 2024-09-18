@@ -20,6 +20,9 @@ form.addEventListener("submit", (event) => {
     else {
         checker.classList.add("error");
         errorMsg.style.display = "block"
+        emailInput.style.border = null;
+        errorMsg.style.color = "red"
+        errorMsg.textContent = "Please provide a valid email";        
     }
 
 })
