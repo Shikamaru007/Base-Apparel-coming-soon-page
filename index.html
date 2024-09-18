@@ -18,9 +18,13 @@
         <article>
             <h1><span>WE'RE</span><br>COMING<br>SOON</h1>
             <p>Hello fellow shoppers! We're currently building our new fashion store. Add your email below to stay up-to-date with announcements and our launch deals.</p>
-            <form action="" method="post">
-                <input type="email" name="email" id="email" placeholder="Email Address">
-                <button type="submit"><span class="material-symbols-rounded icon">arrow_forward_ios</span></button>
+            <form action="" method="post" id="form">
+                <div class="email">
+                    <input type="text" name="email" id="email" placeholder="Email Address">
+                    <img src="images/icon-error.svg">
+                    <button type="submit"><span class="material-symbols-rounded icon">arrow_forward_ios</span></button>
+                </div>
+                <span id="invalid">Please provide a valid email</span>
             </form>
         </article>
     </div>
