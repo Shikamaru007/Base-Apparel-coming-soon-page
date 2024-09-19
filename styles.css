@@ -115,3 +115,50 @@ button:hover {
     border: 1.5px solid red;
 }
 
+@media screen and (min-width:1027px){
+    .container {
+        max-width: 100%;
+        width: 100%;;
+    }
+    body {
+        padding: 0;
+        height: 100vh;
+    }
+    .container {
+        display: flex;
+    }
+    .mobile {
+        display: none;
+    }
+    .desktop {
+        display: flex;
+    }
+    .left {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+    }
+    .right {
+        display: flex;
+        flex: 1;
+        justify-content: right;
+    }
+    h1 {
+        font-size: 3.5rem;
+        letter-spacing: 18px;
+    }
+    header {
+        padding: 4rem 12rem;
+        padding-inline:  clamp(2rem, 12.17vw, 18rem);
+    }
+    header img {
+        width: 10rem;
+    }
+    article {
+        text-align: left;
+        padding-inline:  clamp(2rem, 12.17vw, 18rem);
+    }
+    article p {
+        line-height: 2;
+    }
+}
