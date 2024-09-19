@@ -11,6 +11,14 @@ body {
     min-height: 100vh;
     background-image: linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
     padding-bottom: 5rem;
+    display: flex;
+    justify-content: center;
+}
+.desktop {
+    display: none;
+}
+.container {
+    max-width: 375px;
 }
 header {
     padding: 2rem;
@@ -47,6 +55,10 @@ input[type=text] {
     border: 1.5px solid hsla(0, 6%, 24%, 0.303);
     background-color: transparent;
 }
+input[type=text]:focus {
+    background-color: transparent;
+    outline: 2px solid hsla(0, 5%, 66%, 0.7);
+}
 input[type=text]::placeholder {
     color: hsl(0, 36%, 70%, .7);
 }
@@ -59,7 +71,7 @@ form {
 }
 button {
     position: absolute;
-    right: 0;
+    right: -10px;
     top: 0;
     bottom: 0;
     padding: 0 1.8rem;
@@ -73,7 +85,6 @@ button {
 button:hover {
     box-shadow: 0 20px 25px hsla(0, 5%, 66%, 0.4);
     background-image: linear-gradient(135deg, hsl(0, 80%, 96%),  hsl(0, 74%, 84%));
-
 }
 .icon {
     font-size: 1.2rem;
@@ -91,7 +102,7 @@ button:hover {
 .email img {
     position: absolute;
     width: 1rem;
-    right: 25%;
+    right: 20%;
     top: 0;
     bottom: 0;
     margin: auto;
@@ -103,3 +114,4 @@ button:hover {
 .email.error input[type=text] {
     border: 1.5px solid red;
 }
+
